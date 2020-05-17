@@ -16,8 +16,6 @@ kind: StatefulSet
 apiVersion: apps/v1
 metadata:
   name: ledger-db
-  annotations:
-    configmanagement.gke.io/cluster-selector: onprem
 spec:
   serviceName: "ledger-db"
   replicas: 1
